@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.container {
+    padding: 0 50px;
+}
+
+.list-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-col {
+    flex-basis: 70%;
+}
+
+.right-col {
+    flex-basis: 25%;
+}
+
+.left-col h1 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.left-col .house {
+
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.house-img {
+    flex-basis: 40%;
+
+}
+
+.house-info {
+    flex-basis: 58%;
+    color: #555;
+}
+
+.house-img img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.house-info h3 {
+    font-weight: 600;
+    color: #333;
+    font-size: 22px;
+    margin: 4px 0;
+}
+
+.house-info i {
+    color: #ff5361;
+    font-size: 18px;
+    margin: 10px 1px;
+}
+
+.house-price {
+    text-align: right;
+}
+
+.house-price h4 {
+    font-size: 20px;
+}
+
+.house-price h4 span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.right-col .sidebar {
+    border: 1px solid #9999;
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+
+.sidebar h2 {
+    font-weight: 500;
+}
+
+.sidebar h3 {
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.filter p {
+    flex: 1;
+}
+
+.filter input {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+footer {
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.55);
+    padding: 2rem;
+    display: flex;
+    align-items:baseline;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+h2{
+    color: #555;
+}
+
+ul li {
+    list-style: none;
+    margin-top: 0.8em;
+    font-size: 1.1em;
+}
+.amenities ul{
+    margin-top: 2em;
+}
+.location p{
+    margin-top: 2em;
+    font-size: 1.1em;
+}
+.contact .socials{
+    margin-top: 2em;
+}
+.socials i{
+    font-size: 1.9em;
+}
+
+i {
+    margin-right: 0.5em;
+    color: #ff5361;
+    font-size: 1.3em;
+
+}
+
+
+
+/* small scree for listing page */
+@media only screen and (max-width: 700px) {
+
+    .left-col,
+    .right-col,
+    .house-img,
+    .house-info {
+        flex-basis: 100%;
+    }
+    footer{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        
+    }
+    .amenities{
+        margin-bottom: 2em;
+    }
+    .amenities ul{
+        margin-top: 1em;
+    }
+    .location p{
+        margin-top: 1em;
+    }
+    .contact{
+        margin-top: 1em;
+    }
+    .contact .socials{
+        margin-top: 1em;
+    }
+}
