@@ -2,27 +2,27 @@ const leftContainer = document.querySelector(".left-col");
 
 fetch('http://localhost:9090/')
     .then(response => response.json())
-    .then(data =>fetchHouses(data));
+    .then(data => fetchHouses(data));
 
-function fetchHouses(data){
-    if (data.message === 'Successfully retrieved data!' && data.status === 200){
+function fetchHouses(data) {
+    if (data.message === 'Successfully retrieved data!' && data.status === 200) {
         //data is an array, loop over each
         data.data.forEach(room => {
             //create an element div
             const houseEl = document.createElement("div");
-           
+
             //give the element a class
             houseEl.classList.add('house');
-            
+
             //add the created div class="house" to the leftContainer
             leftContainer.append(houseEl)
-            
+
             //check if roomNumbers is not empty
-            if(room.roomNumber.length !==0){
+            if (room.roomNumber.length !== 0) {
 
- 
 
-                    houseEl.innerHTML = `
+
+                houseEl.innerHTML = `
                    
                        <div class="house-img">
                        <img
@@ -46,12 +46,12 @@ function fetchHouses(data){
                            </div>
                        </div>
                  `;
-                
 
-             
+
+
             }
 
-            
+
         });
     }
 }
